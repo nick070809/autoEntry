@@ -1,0 +1,7 @@
+server:
+  port: 9900
+spring:
+  profiles:
+    active: dev
+logging:
+  path: /Users/xianguang/log/demo-api
