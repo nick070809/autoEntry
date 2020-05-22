@@ -9,9 +9,9 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>quick-star</artifactId>
+    <artifactId>spi0</artifactId>
 
-    <name>quick-star</name>
+    <name>spi0</name>
     <!-- FIXME change it to the project's website -->
     <url>http://www.example.com</url>
 
@@ -27,8 +27,26 @@
             <artifactId>junit</artifactId>
         </dependency>
 
-
+        <dependency>
+            <groupId>nick</groupId>
+            <artifactId>lli-util</artifactId>
+        </dependency>
 
     </dependencies>
 
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-jar-plugin</artifactId>
+                    <configuration>
+                        <archive>
+                            <addMavenDescriptor>false</addMavenDescriptor>
+                        </archive>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
 </project>

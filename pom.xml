@@ -14,6 +14,8 @@
         <module>quick-star</module>
         <module>base-jar</module>
         <module>gro0vy</module>
+        <module>spi0</module>
+        <module>googlet-ts</module>
     </modules>
 
 
@@ -107,6 +109,27 @@
                 <artifactId>fastjson</artifactId>
                 <version>1.2.32</version>
             </dependency>
+
+            <dependency>
+                <groupId>nick</groupId>
+                <artifactId>lli-util</artifactId>
+                <version>1.0-SNAPSHOT</version>
+                <exclusions>
+                    <exclusion>
+                        <artifactId>asm</artifactId>
+                        <groupId>org.ow2.asm</groupId>
+                    </exclusion>
+                    <exclusion>
+                        <artifactId>slf4j-log4j12</artifactId>
+                        <groupId>org.slf4j</groupId>
+                    </exclusion>
+                    <exclusion>
+                        <artifactId>log-integration</artifactId>
+                        <groupId>com.github.houbb</groupId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 

@@ -8,7 +8,7 @@
 
 　　因为JDK已经在loadClass方法中帮我们实现了ClassLoader搜索类的算法，当在loadClass方法中搜索不到类时，loadClass方法就会调用findClass方法来搜索类，所以我们只需重写该方法即可。如没有特殊的要求，一般不建议重写loadClass搜索类的算法。
 
-   ref : org.nixk.TestUnit.testClassLoader
+   ref : org.nixk.clazz.loader.TestUnit.testClassLoader
     
 双亲委托模型 
 

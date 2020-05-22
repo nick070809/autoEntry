@@ -1,4 +1,4 @@
-package org.nixk;
+package org.nixk.clazz.loader;
 
 import lombok.Data;
 
