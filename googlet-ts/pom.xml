@@ -34,6 +34,14 @@
             <artifactId>jlayer</artifactId>
             <version>1.0.1</version>
         </dependency>
+
+        <dependency>
+            <groupId>com.github.axet</groupId>
+            <artifactId>java-flac-encoder</artifactId>
+            <version>0.3.8</version>
+        </dependency>
+
+
     </dependencies>
 
 

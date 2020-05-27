@@ -16,6 +16,9 @@
         <module>gro0vy</module>
         <module>spi0</module>
         <module>googlet-ts</module>
+        <module>flink</module>
+        <module>base-demo</module>
+
     </modules>
 
 
