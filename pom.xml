@@ -18,6 +18,9 @@
         <module>googlet-ts</module>
         <module>flink</module>
         <module>base-demo</module>
+        <module>common</module>
+        <module>jsql</module>
+        <module>txf</module>
 
     </modules>
 

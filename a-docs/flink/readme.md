@@ -39,10 +39,11 @@
     bin下的Flink run -c 之前点击选择的Main Class jar包的全称.(这里注意,一定要确定jar包中Main Class的文件路径是否正确,如果Scala包含了多级包的话,那就是包名.MainClass名,这里的class是之前导出Jar包中选择的Main class)
     关闭Flink为,stop-cluster.sh
     
+    上传jar并执行，重要！
     flink run -c org.nixk.SocketTextStreamWordCount /Users/xianguang/IdeaProjects/nick070809/autoEntry/out/artifacts/flink_jar/flink.jar 127.0.0.1 9000
     Job has been submitted with JobID ce79c28205a1afac0d68e3daed156a59
     
-    
+    cd /usr/local/Cellar/apache-flink/1.10.1/libexec/log
     tail -200f flink-xianguang-taskexecutor-0-MacBook-Pro-7.local.out
     (nixk,1)
     (de,1)
@@ -181,3 +182,7 @@ dataset    数据集/批处理，一次性数据
 SlidingProcessingTimeWindows会对每个进入窗口的元素根据系统时间分配到(size / slide)个不同的窗口，并会在每个窗口上根据窗口结束时间注册一个定时器（相同窗口只会注册一份），当定时器超时时意味着该窗口完成了，这时会回调对应窗口的Trigger的onProcessingTime方法，返回FIRE_AND_PURGE，也就是会执行窗口计算并清空窗口。
 
 为简化问题，时间戳从0开始，第一条record会被分配到[-5,5)和[0,10)两个窗口中，当系统时间到5时，就会计算[-5,5)窗口中的数据，并将结果发送出去，最后清空窗口中的数据，释放该窗口资源。
+
+
+https://blog.csdn.net/wangpei1949/article/details/99698868
+Flink DataStream分流、合流

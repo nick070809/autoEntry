@@ -69,6 +69,11 @@ under the License.
             <scope>provided</scope>
         </dependency>
 
+        <dependency>
+            <groupId>nick</groupId>
+            <artifactId>lli-util</artifactId>
+        </dependency>
+
         <!-- Add connector dependencies here. They must be in the default scope (compile). -->
 
         <!-- Example:

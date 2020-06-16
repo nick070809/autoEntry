@@ -9,9 +9,9 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>base-demo</artifactId>
+    <artifactId>jsql</artifactId>
 
-    <name>base-demo</name>
+    <name>jsql</name>
     <!-- FIXME change it to the project's website -->
     <url>http://www.example.com</url>
 
@@ -26,10 +26,12 @@
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.11</version>
-         </dependency>
+
+        </dependency>
         <dependency>
-            <groupId>nick</groupId>
-            <artifactId>lli-util</artifactId>
+            <groupId>com.github.jsqlparser</groupId>
+            <artifactId>jsqlparser</artifactId>
+            <version>0.9</version>
         </dependency>
 
     </dependencies>
