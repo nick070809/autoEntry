@@ -29,7 +29,7 @@ public class FileUtil4Fink {
         }
         //如果是目录那么进行递归调用
         if (dir.isDirectory()) {
-            if(dir.getName().equals("hjreactui")){
+            if(dir.getName().equals("**")){
                 return list;
             }
             //获取目录下的所有文件
@@ -76,7 +76,7 @@ public class FileUtil4Fink {
 
 
     public static void main(String[] args) throws Exception {
-        String dirpath = "/Users/xianguang/IdeaProjects";
+        String dirpath = "/Users/**/IdeaProjects";
         File dir = new File(dirpath);
 
         List<File> list = FileUtil4Fink.showListFile(dir);
